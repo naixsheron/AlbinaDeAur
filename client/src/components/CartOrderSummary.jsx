@@ -1,8 +1,16 @@
-import { Button, Flex, Heading, Stack, Text, useColorModeValue as mode, Badge } from '@chakra-ui/react';
-import { useState } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
-import { useSelector } from 'react-redux';
-import { Link as ReactLink, useNavigate } from 'react-router-dom';
+import {
+  Button,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  useColorModeValue as mode,
+  Badge,
+} from "@chakra-ui/react";
+import { useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
+import { useSelector } from "react-redux";
+import { Link as ReactLink, useNavigate } from "react-router-dom";
 
 const CartOrderSummary = () => {
   const [buttonLoading, setButtonLoading] = useState();
@@ -13,52 +21,63 @@ const CartOrderSummary = () => {
 
   const checkoutHandler = () => {
     setButtonLoading(true);
-    navigate('/checkout');
+    navigate("/checkout");
   };
 
   return (
-    <Stack spacing='8' borderWidth='1px' rounded='lg' padding='8' w='full'>
-      <Heading size='md'>Order Summary</Heading>
-      <Stack spacing='6'>
-        <Flex justify='space-between'>
-          <Text fontWeight='medium' color={mode('gray.600', 'gray.400')}>
-            Subtotal
+    <Stack
+      spacing="8"
+      boxShadow="2xl"
+      borderWidth="1px"
+      rounded="lg"
+      padding="12"
+      w="full"
+    >
+      <Heading size="md">Rezumat Comanda</Heading>
+      <Stack spacing="6">
+        <Flex justify="space-between">
+          <Text fontWeight="medium" color={mode("gray.600", "gray.400")}>
+            Suma partiala
           </Text>
-          <Text fontWeight='medium'>${subtotal}</Text>
+          <Text fontWeight="medium">{subtotal}</Text>
         </Flex>
-        <Flex justify='space-between'>
-          <Text fontWeight='medium' color={mode('gray.600', 'gray.400')}>
-            Shipping
+        <Flex justify="space-between">
+          <Text fontWeight="medium" color={mode("gray.600", "gray.400")}>
+            Livrare
           </Text>
-          <Text fontWeight='medium'>
+          <Text fontWeight="medium">
             {subtotal <= 1000 ? (
               standardShipping
             ) : (
-              <Badge rounded='full' px='2' fontSize='0.8em' colorScheme='green'>
-                Free
+              <Badge rounded="full" px="2" fontSize="0.8em" colorScheme="green">
+                Gratis
               </Badge>
             )}
           </Text>
         </Flex>
-        <Flex justify='space-between'>
-          <Text fontSize='xl' fontWeight='extrabold'>
+        <Flex justify="space-between">
+          <Text fontSize="xl" fontWeight="medium">
             Total
           </Text>
-          <Text fontSize='xl' fontWeight='extrabold'>
-            $ {subtotal <= 1000 ? Number(subtotal) + Number(standardShipping) : subtotal}
+          <Text fontSize="xl" fontWeight="bold">
+            {subtotal <= 1000
+              ? Number(subtotal) + Number(standardShipping)
+              : subtotal}
+            RON
           </Text>
         </Flex>
       </Stack>
       <Button
         as={ReactLink}
-        to='/checkout'
-        colorScheme='orange'
-        size='lg'
-        fontSize='md'
+        to="/checkout"
+        colorScheme="orange"
+        size="lg"
+        fontSize="md"
         rightIcon={<FaArrowRight />}
         isLoading={buttonLoading}
-        onClick={() => checkoutHandler()}>
-        Checkout
+        onClick={() => checkoutHandler()}
+      >
+        Plasare comanda
       </Button>
     </Stack>
   );
