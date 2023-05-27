@@ -57,11 +57,11 @@ const LandingScreen = () => (
                 w={12}
                 color={useColorModeValue("orange.500", "orange.300")}
               />
-              <Text fontSize="4xl" fontWeight="bold">
+              <Text fontSize={{ base: "2xl", md: "4xl" }} fontWeight="bold">
                 Albina de Aur
               </Text>
             </Flex>
-            <Heading size="xl" fontWeight="normal">
+            <Heading size={{ base: "lg", md: "xl" }} fontWeight="normal">
               Îmbrățișează puterea albinelor pentru o viață sănătoasă
             </Heading>
           </Stack>
@@ -139,11 +139,11 @@ const LandingScreen = () => (
                 w={12}
                 color={useColorModeValue("orange.500", "orange.300")}
               />
-              <Text fontSize="4xl" fontWeight="bold">
+              <Text fontSize={{ base: "2xl", md: "4xl" }} fontWeight="bold">
                 Adopta un Stup
               </Text>
             </Flex>
-            <Heading size="xl" fontWeight="normal">
+            <Heading size={{ base: "lg", md: "xl" }} fontWeight="normal">
               Prin adoptarea unui singur stup susții peste 60.000 de albine și
               un apicultor local. Contribuția ta contează.
             </Heading>
