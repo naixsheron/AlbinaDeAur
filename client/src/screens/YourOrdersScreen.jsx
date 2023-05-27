@@ -87,7 +87,7 @@ const YourOrdersScreen = () => {
                       {order.orderItems.map((item) => (
                         <UnorderedList key={item._id}>
                           <ListItem>
-                            {item.qty} x {item.name} (${item.price} fiecare)
+                            {item.qty} x {item.name} ({item.price} RON fiecare)
                           </ListItem>
                         </UnorderedList>
                       ))}
