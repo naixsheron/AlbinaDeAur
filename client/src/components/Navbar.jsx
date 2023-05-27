@@ -44,7 +44,13 @@ const ShoppingCartIcon = () => {
   const { cart } = cartInfo;
   return (
     <Flex>
-      <Text fontStyle="italic" as="sub" fontSize="xs">
+      <Text
+        fontStyle="italic"
+        fontWeight="extrabold"
+        color="orange.400"
+        as="sub"
+        fontSize="md"
+      >
         {cart.length}
       </Text>
       <Icon ml="-1.5" as={FiShoppingCart} h="4" w="7" alignSelf="center" />
@@ -113,8 +119,8 @@ const Navbar = () => {
             <Flex alignItems="center">
               <Icon
                 as={GiBee}
-                h={8}
-                w={8}
+                h={10}
+                w={10}
                 color={isHovering ? "cyan.400" : "orange.400"}
               />
               <Text fontWeight="extrabold">Albina de Aur</Text>

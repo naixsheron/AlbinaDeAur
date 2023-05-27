@@ -1,6 +1,15 @@
-import { Flex, Select, useColorModeValue as mode, Image, Box, Text, Spacer, Divider } from '@chakra-ui/react';
-import { useDispatch } from 'react-redux';
-import { addCartItem } from '../redux/actions/cartActions';
+import {
+  Flex,
+  Select,
+  useColorModeValue as mode,
+  Image,
+  Box,
+  Text,
+  Spacer,
+  Divider,
+} from "@chakra-ui/react";
+import { useDispatch } from "react-redux";
+import { addCartItem } from "../redux/actions/cartActions";
 
 const CheckoutItem = ({ cartItem }) => {
   const { name, image, price, stock, qty, id } = cartItem;
@@ -9,27 +18,28 @@ const CheckoutItem = ({ cartItem }) => {
     <>
       <Flex>
         <Image
-          rounded='lg'
-          width='120px'
-          height='120px'
-          fit='cover'
+          rounded="lg"
+          width="120px"
+          height="120px"
+          fit="cover"
           src={image}
           alt={name}
-          draggable='false'
-          loading='lazy'
+          draggable="false"
+          loading="lazy"
         />
-        <Flex direction='column' align='stretch' flex='1' mx='2' spacing='4'>
-          <Text noOfLines='2' maxW='150px'>
+        <Flex direction="column" align="stretch" flex="1" mx="2" spacing="4">
+          <Text noOfLines="2" maxW="150px">
             {name}
           </Text>
           <Spacer />
           <Select
-            maxW='64px'
-            focusBorderColor={mode('orange.500', 'orange.200')}
+            maxW="64px"
+            focusBorderColor={mode("orange.500", "orange.200")}
             value={qty}
             onChange={(e) => {
               dispatch(addCartItem(id, e.target.value));
-            }}>
+            }}
+          >
             {[...Array(stock).keys()].map((x) => (
               <option key={x + 1} value={x + 1}>
                 {x + 1}
@@ -38,10 +48,10 @@ const CheckoutItem = ({ cartItem }) => {
           </Select>
         </Flex>
         <Box>
-          <Text fontWeight='bold'>${price}</Text>
+          <Text fontWeight="bold">{price} RON</Text>
         </Box>
       </Flex>
-      <Divider bg={mode('gray.400', 'gray.800')} />
+      <Divider bg={mode("gray.400", "gray.800")} />
     </>
   );
 };

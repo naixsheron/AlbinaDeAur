@@ -49,7 +49,9 @@ const Rating = ({ rating, numberOfReviews }) => {
         />
       </HStack>
       <Text fontSize="md" fontWeight="bold" ml="4px">
-        {`${numberOfReviews} ${numberOfReviews === 1 ? "Review" : "Reviews"}`}
+        {`${numberOfReviews} ${
+          numberOfReviews === 1 ? "Recenzie" : "Recenzii"
+        }`}
       </Text>
     </Flex>
   );
@@ -64,15 +66,14 @@ const ProductCard = ({ product }) => {
   const addItem = (id) => {
     if (cart.some((cartItem) => cartItem.id === id)) {
       toast({
-        description:
-          "This item is already in your cart. Go to your cart to change the amount.",
+        description: "Acest produs se afla deja in cosul tau!",
         status: "error",
         isClosable: true,
       });
     } else {
       dispatch(addCartItem(id, 1));
       toast({
-        description: "Item has been added.",
+        description: "Produs adaugat",
         status: "success",
         isClosable: true,
       });
@@ -90,6 +91,11 @@ const ProductCard = ({ product }) => {
       rounded="lg"
       shadow="lg"
       position="relative"
+      transition="transform 0.3s"
+      _hover={{
+        transform: "scale(1.05)",
+        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)", // Adăugați aici stilurile de umbră dorite
+      }}
     >
       {product.productIsNew && (
         <Circle
@@ -109,7 +115,14 @@ const ProductCard = ({ product }) => {
           bg="red.200"
         />
       )}
-      <Image p={4} src={product.image} alt={product.name} roundedTop="lg" />
+      <Link
+        as={ReactLink}
+        to={`/product/${product._id}`}
+        pt="2"
+        cursor="pointer"
+      >
+        <Image p={4} src={product.image} alt={product.name} roundedTop="lg" />
+      </Link>
 
       <Box flex="1" maxH="5" alignItems="baseline">
         {product.stock <= 0 && (
@@ -130,8 +143,11 @@ const ProductCard = ({ product }) => {
           pt="2"
           cursor="pointer"
         >
-          <Box fontSize="2xl" fontWeight="semibold" as="h4" lineHeight="tight">
+          <Box fontSize="xl" fontWeight="bold" as="h4" lineHeight="tight">
             {product.name}
+          </Box>
+          <Box fontSize="sm" fontWeight="semibold" as="h4" lineHeight="tight">
+            {product.category}
           </Box>
         </Link>
       </Flex>
@@ -148,7 +164,7 @@ const ProductCard = ({ product }) => {
         </Box>
 
         <Tooltip
-          label="Add to cart"
+          label="Adauga in cos"
           bg="white"
           placement={"top"}
           color={"gray.800"}
