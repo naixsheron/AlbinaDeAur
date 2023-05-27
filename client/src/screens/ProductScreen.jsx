@@ -88,7 +88,7 @@ const ProductScreen = () => {
   const addItem = () => {
     dispatch(addCartItem(product._id, amount));
     toast({
-      description: "Item has been added.",
+      description: "Produsul a fost adaugat",
       status: "success",
       isClosable: true,
     });
