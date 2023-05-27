@@ -86,7 +86,7 @@ const Navbar = () => {
   const logoutHandler = () => {
     dispatch(logout());
     toast({
-      description: "You have been logged out.",
+      description: "Ai fost delogat.",
       status: "success",
       isClosable: true,
     });

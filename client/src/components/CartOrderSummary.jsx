@@ -61,8 +61,8 @@ const CartOrderSummary = () => {
           </Text>
           <Text fontSize="xl" fontWeight="bold">
             {subtotal <= 1000
-              ? Number(subtotal) + Number(standardShipping)
-              : subtotal}
+              ? (Number(subtotal) + Number(standardShipping)).toFixed(2)
+              : subtotal.toFixed(2)}
             RON
           </Text>
         </Flex>

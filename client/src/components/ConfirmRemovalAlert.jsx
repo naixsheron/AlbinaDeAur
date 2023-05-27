@@ -36,10 +36,10 @@ const ConfirmRemovalAlert = ({
           <AlertDialogBody>Sunteti sigur? </AlertDialogBody>
           <AlertDialogFooter>
             <Button ref={cancelRef} onClick={onClose}>
-              Cancel
+              Iesiti
             </Button>
             <Button colorScheme="red" onClick={onDeleteItem} ml={3}>
-              Delete {itemToDelete.name}
+              Sterge {itemToDelete.name}
             </Button>
           </AlertDialogFooter>
         </AlertDialogContent>
