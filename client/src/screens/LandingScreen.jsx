@@ -101,8 +101,8 @@ const LandingScreen = () => (
           src="images/apicol2.jpg"
           alt="La rapita"
           fallback={<Skeleton />}
-          maxH="550px"
-          minW="300px"
+          width="550"
+          height="300"
           objectFit="cover"
           flex="1"
           className="wasteland "
@@ -195,8 +195,8 @@ const LandingScreen = () => (
           src="images/albines.jpg"
           alt="La rapita"
           fallback={<Skeleton />}
-          maxH="550px"
-          minW="450px"
+          width="550"
+          height="400"
           objectFit="cover"
           flex="1"
           borderRadius={{
