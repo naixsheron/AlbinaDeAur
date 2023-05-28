@@ -11,6 +11,7 @@ import {
   Stack,
   useColorModeValue,
   Text,
+  color,
 } from "@chakra-ui/react";
 import { FaArrowRight, FaShippingFast } from "react-icons/fa";
 import { BiBookReader } from "react-icons/bi";
@@ -49,7 +50,7 @@ const LandingScreen = () => (
         py={{ base: "6", md: "8", lg: "12" }}
       >
         <Stack spacing={{ base: "8", lg: "10" }}>
-          <Stack spacing={{ base: "2", lg: "4" }}>
+          <Stack spacing={{ base: "2", lg: "4" }} mb="12">
             <Flex alignItems="center">
               <Icon
                 as={GiTechnoHeart}
@@ -69,16 +70,29 @@ const LandingScreen = () => (
             <Link
               as={ReactLink}
               to="/products"
-              color={useColorModeValue("orange.500", "orange.300")}
               fontWeight="bold"
               fontSize="lg"
+              p="2"
+              class="button button--pen"
             >
-              Descoperă acum
+              <div class="button__wrapper">
+                <span class="button__text">Descopera</span>
+              </div>
+              <div class="characterBox">
+                <div class="character wakeup">
+                  <div class="character__face"></div>
+                  <div class="charactor__face2"></div>
+                </div>
+                <div class="character wakeup">
+                  <div class="character__face"></div>
+                  <div class="charactor__face2"></div>
+                </div>
+                <div class="character">
+                  <div class="character__face"></div>
+                  <div class="charactor__face2"></div>
+                </div>
+              </div>
             </Link>
-            <Icon
-              color={useColorModeValue("orange.500", "ornage.300")}
-              as={FaArrowRight}
-            />
           </HStack>
         </Stack>
       </Box>
@@ -131,7 +145,7 @@ const LandingScreen = () => (
         py={{ base: "6", md: "8", lg: "12" }}
       >
         <Stack spacing={{ base: "8", lg: "10" }}>
-          <Stack spacing={{ base: "2", lg: "4" }}>
+          <Stack spacing={{ base: "2", lg: "4" }} mb="8">
             <Flex alignItems="center">
               <Icon
                 as={GiBeehive}
@@ -152,16 +166,25 @@ const LandingScreen = () => (
             <Link
               as={ReactLink}
               to="/products"
-              color={useColorModeValue("orange.500", "orange.300")}
               fontWeight="bold"
               fontSize="lg"
+              class="button button--piyo"
             >
-              Adopta acum
+              <div class="button__wrapper">
+                <span class="button__text">Adopta</span>
+              </div>
+              <div class="characterBox">
+                <div class="character wakeup">
+                  <div class="character__face"></div>
+                </div>
+                <div class="character wakeup">
+                  <div class="character__face"></div>
+                </div>
+                <div class="character">
+                  <div class="character__face"></div>
+                </div>
+              </div>
             </Link>
-            <Icon
-              color={useColorModeValue("orange.500", "ornage.300")}
-              as={FaArrowRight}
-            />
           </HStack>
         </Stack>
       </Box>
