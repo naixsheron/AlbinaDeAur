@@ -195,8 +195,8 @@ const LandingScreen = () => (
           src="images/albines.jpg"
           alt="La rapita"
           fallback={<Skeleton />}
-          width="550"
-          height="400"
+          width="500px"
+          height="450px"
           objectFit="cover"
           flex="1"
           borderRadius={{
