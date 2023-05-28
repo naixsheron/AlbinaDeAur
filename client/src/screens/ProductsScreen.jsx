@@ -46,7 +46,7 @@ const ProductsScreen = () => {
       ) : (
         products.map((product) => (
           <WrapItem key={product._id}>
-            <Center w="250px" h="550px">
+            <Center w="250px" h={{ base: "480px", md: "530px" }}>
               <ProductCard product={product} />
             </Center>
           </WrapItem>

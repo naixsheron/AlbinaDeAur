@@ -86,7 +86,7 @@ const ProductCard = ({ product }) => {
       spacing="3px"
       bg={useColorModeValue("white", "gray.800")}
       minW="240px"
-      h="450px"
+      h="440px"
       borderWidth="1px"
       rounded="lg"
       shadow="lg"

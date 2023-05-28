@@ -13,7 +13,7 @@ import {
   Text,
   color,
 } from "@chakra-ui/react";
-import { FaArrowRight, FaShippingFast } from "react-icons/fa";
+import { FaShippingFast } from "react-icons/fa";
 import { BiBookReader } from "react-icons/bi";
 import { Link as ReactLink } from "react-router-dom";
 import { GiTechnoHeart } from "react-icons/gi";
@@ -105,6 +105,7 @@ const LandingScreen = () => (
           minW="300px"
           objectFit="cover"
           flex="1"
+          className="wasteland "
         />
       </Flex>
     </Stack>
