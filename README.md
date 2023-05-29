@@ -4,7 +4,7 @@ Bun venit la proiectul nostru! Această resursă își propune să ofere un sist
 
 Cu acest proiect, puteți crea rapid conturi de utilizator prin generarea de date aleatorii, dar plauzibile. Scopul este de a simplifica procesul de creare a conturilor în scopuri de testare sau demonstrație, fără a fi nevoie de informații reale ale utilizatorilor.
 
-
+Sectiunea de paypal functioneaza : Se poate testa cu Email :sb-vn9uk26083901@personal.example.com Password: cZ!r=5Ns
 
 Vă invităm să explorați codul și să experimentați diferite scenarii. Sperăm ca acest proiect să fie o resursă utilă pentru nevoile dumneavoastră de testare și dezvoltare.
 
