@@ -1,16 +1,20 @@
 
 # AlbinaDeAur
-Welcome to our project! This repository aims to provide an easy-to-use account creation system using fictitious data. We have intentionally removed regular expressions (regex) to make it more user-friendly and accessible for exploration.
+Bun venit la proiectul nostru! Această resursă își propune să ofere un sistem simplu de creare a conturilor folosind date fictive. Am eliminat intenționat expresiile regulate (regex) pentru a face procesul mai ușor de explorat și mai accesibil. De ex : email :test@yahoo.com Password: 1
 
-With this project, you can quickly create user accounts by generating random, yet plausible, data. The purpose is to simplify the account creation process for testing or demonstration purposes, without the need for real user information.
+Cu acest proiect, puteți crea rapid conturi de utilizator prin generarea de date aleatorii, dar plauzibile. Scopul este de a simplifica procesul de creare a conturilor în scopuri de testare sau demonstrație, fără a fi nevoie de informații reale ale utilizatorilor.
 
-Feel free to explore the code and experiment with different scenarios. We hope this project proves to be a helpful resource for your testing and development needs.
-ADmin dashboard -
-This repository features an admin dashboard that allows for comprehensive exploration and management of various aspects of the system. To fully experience the most interesting part of the project, we kindly request access to your account, which will enable you to delve into the intricacies of the admin dashboard.
 
-The admin dashboard provides a comprehensive overview of user accounts, data analytics, system settings, and other relevant functionalities. By granting us access to your account, you will have the opportunity to navigate through the different sections, interact with the features, and explore the extensive capabilities of the admin dashboard.
 
-Rest assured that the access granted will only be used for exploration purposes and will not compromise the security or integrity of your account. We value your privacy and adhere to strict data protection protocols.
+Vă invităm să explorați codul și să experimentați diferite scenarii. Sperăm ca acest proiect să fie o resursă utilă pentru nevoile dumneavoastră de testare și dezvoltare.
 
-Thank you for considering granting us access. We are confident that this exploration of the admin dashboard will be an enriching experience for both you and our project.
-![admin1](https://github.com/naixsheron/AlbinaDeAur/assets/124593858/32f70fc7-8afc-4d6a-8235-abde96037876)
+ Acest depozit include un panou de administrare care permite explorarea și gestionarea cuprinzătoare a diferitelor aspecte ale sistemului. 
+
+Panoul de administrare oferă o privire de ansamblu asupra conturilor de utilizator, analizelor de date, setărilor sistemului și a altor funcționalități relevante. Prin acordarea accesului la contul dumneavoastră, veți avea oportunitatea de a naviga prin diferitele secțiuni, de a interacționa cu funcțiile și de a explora capacitățile extinse ale panoului de administrare.
+
+
+
+![admin1](https://github.com/naixsheron/AlbinaDeAur/assets/124593858/83d87fb1-cdf3-4fdb-8001-4012722305ae)
+![admin2](https://github.com/naixsheron/AlbinaDeAur/assets/124593858/b51c4714-cab9-429e-a4d2-13136fbb51fd)
+![admin3](https://github.com/naixsheron/AlbinaDeAur/assets/124593858/cb4e4d69-c42a-44a5-98be-b5d31534edcd)
+![admin4](https://github.com/naixsheron/AlbinaDeAur/assets/124593858/4001ff28-02d9-45e5-a285-8e16221363bf)
