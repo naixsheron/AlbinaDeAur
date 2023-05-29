@@ -86,12 +86,24 @@ const ProductScreen = () => {
   };
 
   const addItem = () => {
-    dispatch(addCartItem(product._id, amount));
-    toast({
-      description: "Produsul a fost adaugat",
-      status: "success",
-      isClosable: true,
-    });
+    const isProductInCart = cart.some(
+      (cartItem) => cartItem.id === product._id
+    );
+
+    if (isProductInCart) {
+      toast({
+        description: "Acest produs se afla deja in cosul tau!",
+        status: "error",
+        isClosable: true,
+      });
+    } else {
+      dispatch(addCartItem(product._id, amount));
+      toast({
+        description: "Produsul a fost adaugat",
+        status: "success",
+        isClosable: true,
+      });
+    }
   };
 
   return (
