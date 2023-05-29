@@ -13,3 +13,4 @@ The admin dashboard provides a comprehensive overview of user accounts, data ana
 Rest assured that the access granted will only be used for exploration purposes and will not compromise the security or integrity of your account. We value your privacy and adhere to strict data protection protocols.
 
 Thank you for considering granting us access. We are confident that this exploration of the admin dashboard will be an enriching experience for both you and our project.
+![admin1](https://github.com/naixsheron/AlbinaDeAur/assets/124593858/32f70fc7-8afc-4d6a-8235-abde96037876)
