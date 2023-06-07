@@ -93,7 +93,7 @@ const YourOrdersScreen = () => {
                       ))}
                     </Td>
                     <Td>
-                      <Button variant="outline">Recetionat</Button>
+                      <Button variant="outline">Receptionat</Button>
                     </Td>
                   </Tr>
                 ))}
