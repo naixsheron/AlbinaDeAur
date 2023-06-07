@@ -555,22 +555,3 @@ code {
   margin-bottom: 80px;
 }
 /* button decopera*/
-
-@media (min-width: 1024px) {
-  .wasteland {
-    animation: zoomIn 10s linear infinite alternate;
-
-    background-size: cover;
-    width: 500px;
-    transform-origin: center center; /* Specificăm punctul de origine al transformării */
-  }
-
-  @keyframes zoomIn {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(2.9);
-    }
-  }
-}
