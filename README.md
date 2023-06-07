@@ -10,7 +10,7 @@ Vă invităm să explorați codul și să experimentați diferite scenarii. Sper
 
  Acest depozit include un panou de administrare care permite explorarea și gestionarea cuprinzătoare a diferitelor aspecte ale sistemului. 
 
-Panoul de administrare oferă o privire de ansamblu asupra conturilor de utilizator, analizelor de date, setărilor sistemului și a altor funcționalități relevante. Prin acordarea accesului la contul dumneavoastră, veți avea oportunitatea de a naviga prin diferitele secțiuni, de a interacționa cu funcțiile și de a explora capacitățile extinse ale panoului de administrare.
+Panoul de administrare oferă o privire de ansamblu asupra conturilor de utilizator, adauga produs nou, sterge recenzii ,stare comenzi  și livrare. Prin acordarea accesului la contul dumneavoastră, veți avea oportunitatea de a naviga prin diferitele secțiuni, de a interacționa cu funcțiile și de a explora capacitățile extinse ale panoului de administrare.
 
 
 
