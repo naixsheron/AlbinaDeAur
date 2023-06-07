@@ -11,7 +11,6 @@ import {
   Stack,
   useColorModeValue,
   Text,
-  color,
 } from "@chakra-ui/react";
 import { FaShippingFast } from "react-icons/fa";
 import { BiBookReader } from "react-icons/bi";
@@ -192,7 +191,7 @@ const LandingScreen = () => (
       <Flex flex="1" overflow="hidden">
         <Image
           mt="8"
-          src="images/albines.jpg"
+          src="images/albiness.jpg"
           alt="La rapita"
           fallback={<Skeleton />}
           width="500px"
