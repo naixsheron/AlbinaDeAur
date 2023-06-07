@@ -100,11 +100,10 @@ const LandingScreen = () => (
           src="images/apicol2.jpg"
           alt="La rapita"
           fallback={<Skeleton />}
-          minW="550"
-          minH="400"
+          width={550}
+          height={550}
           objectFit="cover"
           flex="1"
-          className="wasteland "
         />
       </Flex>
     </Stack>
