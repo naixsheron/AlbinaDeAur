@@ -17,6 +17,7 @@ import {
   Menu,
   MenuList,
   MenuItem,
+  useStyleConfig,
 } from "@chakra-ui/react";
 import { GiBee } from "react-icons/gi";
 import { Link as ReactLink } from "react-router-dom";
@@ -35,26 +36,48 @@ import {
 } from "react-icons/md";
 import { FiShoppingCart } from "react-icons/fi";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/actions/userActions";
+import { motion } from "framer-motion";
 
 const ShoppingCartIcon = () => {
   const cartInfo = useSelector((state) => state.cart);
   const { cart } = cartInfo;
+  const [bump, setBump] = useState(false);
+  const styles = useStyleConfig("ShoppingCartIcon");
+
+  useEffect(() => {
+    if (cart.length > 0) {
+      setBump(true);
+      const timer = setTimeout(() => {
+        setBump(false);
+      }, 500);
+      return () => clearTimeout(timer);
+    }
+  }, [cart.length]);
+
   return (
-    <Flex>
-      <Text
-        fontStyle="italic"
-        fontWeight="extrabold"
-        color="orange.400"
-        as="sub"
-        fontSize="md"
+    <Flex alignItems="center">
+      <motion.div
+        as={Text}
+        sx={styles}
+        className={bump ? "bump-animation" : ""}
+        animate={{ scale: bump ? 1.2 : 1 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
       >
-        {cart.length}
-      </Text>
-      <Icon ml="-1.5" as={FiShoppingCart} h="4" w="7" alignSelf="center" />
-      Cosul meu
+        <Text
+          fontStyle="italic"
+          fontWeight="extrabold"
+          color="orange.400"
+          as="sub"
+          fontSize="md"
+        >
+          {cart.length}
+        </Text>
+        <Icon ml="-1.5" as={FiShoppingCart} h="4" w="7" alignSelf="center" />
+        Cosul meu
+      </motion.div>
     </Flex>
   );
 };
