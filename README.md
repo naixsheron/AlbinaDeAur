@@ -1,4 +1,4 @@
-
+! Aplicatia are nevoie de cateva secunde sa se incarce datorita (free plan render) 
 # AlbinaDeAur
 Bun venit la proiectul nostru! Această resursă își propune să ofere un sistem simplu de creare a conturilor folosind date fictive. Am eliminat intenționat expresiile regulate (regex) pentru a face procesul mai ușor de explorat și mai accesibil. De ex : email :test@yahoo.com Password: 1
 
